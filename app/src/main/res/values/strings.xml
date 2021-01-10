@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">悦听</string>
+    <string name="login">登陆</string>
+    <string name="logout">退出</string>
+    <string name="password">密 码:</string>
+    <string name="username">用户名:</string>
+    <string name="pre_music">上一曲</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="next_music">下一曲</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="submit">提交</string>
+</resources>

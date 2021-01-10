@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    app:contentPaddingBottom="15dp"
+    app:contentPaddingLeft="10dp"
+    app:contentPaddingRight="10dp"
+    app:cardBackgroundColor="#05000000"
+    app:contentPaddingTop="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/ivSongImage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/icon_music" />
+        <LinearLayout
+            android:layout_gravity="left"
+            android:layout_weight="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvSongName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivSongImage"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/tvSongTime"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:maxLength="16"
+                android:layout_weight="12"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="#222222"
+                android:text="不能说的秘密ddddd"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvSonger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivSongImage"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/tvSongTime"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:maxLength="14"
+                    android:textColor="#454343"
+                    android:text="周杰伦"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:maxLength="14"
+                    android:textColor="#454343"
+                    android:text="|"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivSongImage"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/tvSongTime"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textColor="#454343"
+                    android:text="七里香"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:id="@+id/tvSongTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivSongImage"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/ivSongImage"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#4C4949"
+            android:text="4:05"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

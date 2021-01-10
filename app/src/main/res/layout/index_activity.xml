@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/design_default_color_secondary_variant"
+            app:titleTextColor="@color/white"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:id="@+id/idnex_bg"/>
+        <LinearLayout
+            android:id="@+id/linearRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <include layout="@layout/controller_bottom" android:id="@+id/nowSong"/>
+    </FrameLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/nav_view"
+        app:menu="@menu/nav_menu"
+        android:background="@color/design_default_color_secondary_variant"
+        android:layout_gravity="start"/>
+    
+</androidx.drawerlayout.widget.DrawerLayout>
